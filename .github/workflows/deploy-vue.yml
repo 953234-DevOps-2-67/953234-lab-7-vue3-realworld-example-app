@@ -30,7 +30,7 @@ jobs:
       - name: Setup remote directory
         uses: appleboy/ssh-action@master
         with:
-          host: ${{secrets.HOST}}
+          host: ${{secrets.PROD_HOST}}
           username: ${{secrets.SSH_USER_NAME}}
           key: ${{secrets.SSH_KEY}}
           script: |
